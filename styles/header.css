@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3.5rem 10rem;
+
+    & .btn-subscribe{
+        padding: 0.75rem 1.25rem;
+        background-color: var(--pink-dark);
+        border-radius: 0.5rem;
+
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 16px;
+        color: var(--text-title);
+
+        &:hover {
+            background-color: var(--pink-base);
+            transition: all 0.2s ease-out;
+        }
+    }
+}
+
+
+
+
