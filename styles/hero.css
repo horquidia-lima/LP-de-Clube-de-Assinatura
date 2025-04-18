@@ -1,0 +1,108 @@
+.container {
+    position: relative;
+    height: 130vh;
+    background-image: url(../assets/images/hero-background-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero {
+    text-align: center;
+
+    & h1 {
+        /* Desperte a sua imaginação e explore novos mundos */
+        color: var(--text-title);
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 56px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    & p {
+        /* Junte-se ao clube de assinatura Encantos Literários e descubra maravilhas e aventuras a cada página */
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 140%;
+        margin-top: 2rem;
+    }
+
+}
+
+/*INFO SECTION*/
+
+.info-section {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+
+    position: relative;
+
+    & p {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 200%;
+
+        position: relative;
+    
+        & strong {
+            color: var(--blue-light);
+        }
+    }
+
+    & .icon-wrapper {
+        position: absolute;
+    }
+
+    & .icon {
+        position: absolute;
+        width: 5rem;
+        opacity: 0;
+        animation: iconCycle 6s infinite ease-in-out;
+    }
+
+    & .icon-1 {
+        top: -80px;
+        left: 47%;
+        transform: rotate(10deg);
+
+        .icon {
+            animation-delay: 0s;
+        }
+    }
+
+    & .icon-2 {
+        bottom: -20px;
+        left: 20%;
+        transform: rotate(90deg);
+        
+        .icon {
+            animation-delay: 1.2s;
+        }
+    }
+
+    & .icon-3 {
+        bottom: -20px;
+        left: 81%;
+        transform: rotate(-20deg);
+
+        .icon {
+            animation-delay: 2.4s;
+        }
+    }
+}
+
+@keyframes iconCycle {
+    0%, 10% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    15%, 25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30%, 100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}

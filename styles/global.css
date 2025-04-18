@@ -40,9 +40,7 @@ a {
 
 body {
     font-family: var(--ff-base);
-    background: linear-gradient(180deg, #3F0F41 0%, #5C1D6C 50%, #7D298A 100%);
     color: var(--text-body);
-
     min-height: 100vh;
+    background: #13081A;
 }
-
