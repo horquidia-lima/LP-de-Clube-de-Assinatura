@@ -11,8 +11,6 @@
 
     & h1 {
         /* Desperte a sua imaginação e explore novos mundos */
-        color: var(--text-title);
-        font-weight: 700;
         font-size: 3rem;
         line-height: 56px;
         text-align: center;
@@ -21,9 +19,7 @@
 
     & p {
         /* Junte-se ao clube de assinatura Encantos Literários e descubra maravilhas e aventuras a cada página */
-        font-weight: 400;
         font-size: 1.25rem;
-        line-height: 140%;
         margin-top: 2rem;
     }
 
