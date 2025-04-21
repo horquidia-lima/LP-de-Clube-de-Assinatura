@@ -1,0 +1,177 @@
+.planos {
+    text-align: center;
+    position: relative;
+    margin-bottom: 18.8rem;
+
+    & .planos-title {
+        font-size: 2rem;
+        line-height: 38px;
+        margin-bottom: 3.5rem;
+    }
+
+    & .cards-conatiner {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        position: relative;
+        transform: translateY(100px);
+
+        & .card {
+            border-radius: 1.5rem;
+            padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+            max-width: 18rem;
+            max-height: 26rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            & .preco{
+
+                font-weight: 700;
+                font-size: 2.5rem;
+                line-height: 47px;
+            }
+
+            & .preco span {
+                font-size: 0.5rem;
+            }
+
+            & .preco-anual {
+                font-size: 0.875rem;
+                line-height: 140%;
+                color: var(--text-label);
+                /*transform: rotate(-8deg);*/
+            }
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                & img {
+                    width: 0.875rem;
+                    height: 0.875rem;
+                }
+            }
+
+            & li {
+                font-size: 0.75rem;
+                line-height: 140%;
+                color: var(--text-body);
+                /*transform: rotate(-8deg);*/
+            }
+
+            & button {
+                border: none;
+                padding: 0.75rem 3rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                /*transform: rotate(-8deg);*/
+                font-weight: 700;
+                font-size: 0.875rem;
+                line-height: 16px;
+                color: var( --text-title);
+                margin-top: 1.5rem;
+            }
+        }
+
+        & .starts-top {
+            background: url(../assets/icons/starts-top.svg) no-repeat center;
+            width: 2rem;
+            height: 3rem;
+            background-size: contain;
+            position: absolute;
+            transform: translateX(-50%);
+            top: -20px;
+            left: -10px;
+        }
+
+        & .bunny {
+            background: url(../assets/icons/bunny.svg) no-repeat center;
+            background-size: contain;
+            width: 2.8rem;
+            height: 2.8rem;
+            position: absolute;
+            top: -44px;
+            left: 18%;
+            transform: translateX(-50%);
+        }
+
+        & .starts-bottom {
+            background: url(../assets/icons/starts-bottom.svg) no-repeat center;
+            background-size: contain;
+            width: 3.56rem;
+            height: 1.62rem;
+            position: absolute;
+            transform: translateX(-50%);
+            bottom: -10px;
+            right: -80px;
+        }
+
+        & .plano-mensal, .plano-anual {
+            background: var(--shape-base);
+            border: 1px solid var(--shape-stroke);
+
+            & h3 {
+                font-size: 1rem;
+                line-height: 19px;
+                color: var(--blue-light);
+            }
+
+            & button {
+                background: var(--blue-dark);
+            }
+        }
+
+        & .plano-mensal {
+            transform: rotate(-8deg);
+
+            & ul {
+                margin-top: 7.3rem;
+            }
+        }
+
+        & .plano-semestral {
+            transform: scale(1.05);
+            background: var(--shape-hover);
+            position: relative;
+            z-index: 2;
+
+            & h3 {
+                color: var(--pink-light);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+
+            & .badge {
+                padding: 0.57rem 1.25rem;
+                background: var(--shape-base);
+                border-radius: 999px;
+                font-size: 0.625rem;
+                line-height: 12px;
+                letter-spacing: 0.05em;
+                color: var(--text-body);
+                text-align: end;
+                display: inline-block;
+            }
+
+            & ul {
+                margin-top: 5rem;
+            }
+
+            & button {
+                background: var(--pink-dark);
+            }
+        }
+
+        & .plano-anual {
+            transform: rotate(8deg);
+
+            & ul {
+                margin-top: 3.9rem;
+            }
+        }
+    }
+}

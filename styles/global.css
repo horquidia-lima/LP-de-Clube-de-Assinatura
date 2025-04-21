@@ -45,7 +45,7 @@ body {
     background: #13081A;
 }
 
-h1, h2 {
+h1, h2, h3{
     color: var(--text-title);
     font-weight: 700;
 }
@@ -53,4 +53,13 @@ h1, h2 {
 p {
     line-height: 140%;
     font-weight: 400;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
 }

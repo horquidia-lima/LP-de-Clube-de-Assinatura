@@ -1,6 +1,8 @@
 .kit-mensal {
     text-align: center;
     position: relative;
+    margin-top: 13rem;
+    margin-bottom: 19rem;
 
     /* Título com estrelas */
     & .title-stars {
