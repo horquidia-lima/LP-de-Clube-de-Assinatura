@@ -15,12 +15,18 @@
         gap: 1rem;
         position: relative;
         transform: translateY(100px);
+        opacity: 0;
+        animation: showCards 1s forwards;
+        animation-timeline: view();
+        animation-range: entry 30% cover 60%;
 
         & .card {
             border-radius: 1.5rem;
             padding: 1.5rem 1.5rem 1.75rem 1.5rem;
             max-width: 18rem;
             max-height: 26rem;
+            transition: transform 0.3s, background 0.9s ease;
+            background: var(--shape-base);
 
             display: flex;
             flex-direction: column;
@@ -109,7 +115,6 @@
         }
 
         & .plano-mensal, .plano-anual {
-            background: var(--shape-base);
             border: 1px solid var(--shape-stroke);
 
             & h3 {
@@ -173,5 +178,38 @@
                 margin-top: 3.9rem;
             }
         }
+    }
+}
+
+/* Hover no CARD 1 */
+.cards-conatiner:has(.plano-mensal:hover) .card {
+    background-color: var(--shape-base);
+  }
+.cards-conatiner:has(.plano-mensal:hover) .plano-mensal {
+    background-color: var(--shape-hover);
+    z-index: 3;
+  }
+  
+  /* Hover no CARD 2 */
+.cards-conatiner:has(.plano-semestral:hover) .card {
+    background-color: var(--shape-hover);
+  }
+.cards-conatiner:has(.plano-semestral:hover) .plano-semestral {
+    background-color: var(--shape-base);
+  }
+  
+  /* Hover no CARD 3 */
+.cards-conatiner:has(.plano-anual:hover) .card {
+    background-color: var(--shape-base);
+  }
+.cards-conatiner:has(.plano-anual:hover) .plano-anual {
+    background-color: var(--shape-hover);
+    z-index: 3;
+  }
+
+@keyframes showCards {
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
